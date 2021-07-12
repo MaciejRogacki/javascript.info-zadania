@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+  'use strict'
+
+  let login =prompt('Enter login:', '');
+    if(login == 'Admin'){
+      let pass =prompt('Enter password:', '');
+      if(pass == 'TheMaster'){
+        alert('Welcome!');
+      }
+      else if(pass == null || pass == ''){
+        alert('Canceled');
+      }
+      else{
+        alert('Wrong password');
+      }
+    }
+    else if( login == null || login == ''){
+      alert('Canceled');
+    }
+    else alert('I don’t know you')
+
+  </script>
+
+</body>
+
+</html>

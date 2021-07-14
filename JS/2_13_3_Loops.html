@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+  'use strict'
+  let text = 'Please enter number grater than 100';
+  let number;
+  do
+  {
+    number = prompt(`${text}`, 0,);
+    if(number=='' || number==undefined){
+      alert("canceled");
+      brake;
+    } 
+    else if (number>100) alert("thx :)");
+    else{
+      text = 'Your number is lesser than or equal to 100, please enter one that is greater than 100';
+    }
+  }while(number<101);
+
+
+  </script>
+
+</body>
+
+</html>

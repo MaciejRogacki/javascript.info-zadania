@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+      let calculator = {
+          read(){
+             this.a= prompt("Give me the A", 0);
+             this.b= prompt('Give me the B', 0);
+          },
+          sum(){
+            return(`The sum of A + B is ${+this.a + +this.b}`);
+          },
+          mul(){
+            return(`The multiplication of A * B is ${+this.a * +this.b}`);
+          },
+      }
+
+      calculator.read();
+    alert( calculator.sum() );
+    alert( calculator.mul() );
+
+
+  </script>
+
+</body>
+
+</html>

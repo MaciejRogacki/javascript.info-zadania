@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+      function Calculator () {
+          this.read= function(){
+             this.a= prompt("Give me the A", 0);
+             this.b= prompt('Give me the B', 0);
+          },
+          this.sum= function(){
+            return(`The sum of A + B is ${+this.a + +this.b}`);
+          },
+          this.mul= function(){
+            return(`The multiplication of A * B is ${+this.a * +this.b}`);
+          };
+      }
+
+    let calculator = new Calculator();
+    calculator.read();
+    alert( calculator.sum() );
+    alert( calculator.mul() );
+
+
+  </script>
+
+</body>
+
+</html>

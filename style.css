@@ -88,7 +88,7 @@ body {
     padding-right: 12px;
     font-variant-numeric: tabular-nums;
     align-self: flex-start;
-    background-image: linear-gradient(to bottom, aquamarine, orangered);
+    background-image: linear-gradient(to bottom, rgb(127, 219, 255), rgb(212, 0, 255));
     background-attachment: fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

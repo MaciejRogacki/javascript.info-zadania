@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+      'use strict'
+    function checkSpam(str){
+      let newStr = str.toLowerCase();
+      if(newStr.includes('xxx') || newStr.includes('viagra')) return true;
+      return false
+    }
+
+    // test
+    alert(`${checkSpam('buy ViAgRA now')}`);
+    alert(`${checkSpam('free xxxxx')}`);
+    alert(`${checkSpam('binnocent rabbit')}`);
+
+
+  </script>
+
+</body>
+
+</html>

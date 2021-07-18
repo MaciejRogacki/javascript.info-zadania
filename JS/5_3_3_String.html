@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+      'use strict'
+    function truncate(str, maxlength){
+      let stringLength = str.length;
+      let newString = '';
+      if(stringLength > maxlength-1){
+        newString += str.slice(0, maxlength-4)+'...';
+        return newString
+      }
+      return str;
+    }
+
+    //test
+    alert(`${truncate("What I'd like to tell on this topic is:", 20)}`);
+    alert(`${truncate("Hi everyone!", 20)}`);
+
+  </script>
+
+</body>
+
+</html>

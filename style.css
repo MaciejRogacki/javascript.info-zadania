@@ -2,7 +2,19 @@ body {
     background-color: dimgray;
 }
 
-div {
+.logo-bar {
+  position: fixed;
+  z-index:100;
+  top: 10px;
+  left: 80%;
+  width: 100%;
+}
+
+.logo-bar img{
+  width: 200px;
+}
+
+.list {
     width: auto;
     display: flex;
     flex-direction: column;
@@ -21,10 +33,16 @@ div {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    counter-reset: index;  
+    padding: 0;
+    
   }
    
   li {
+    counter-increment: index; 
     font: 200 30px/1.5 Helvetica, Verdana, sans-serif;
+    padding: 12px 0;
+    box-sizing: border-box;
     border-bottom: 1px solid #ccc;
 
   }
@@ -49,4 +67,35 @@ div {
   li a:hover {
     font-size: 35px;
     background: #a7a4a4;
+  }
+
+  li {
+    counter-increment: index; 
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Element counter */
+  li::before {
+    content: counters(index, ".", decimal-leading-zero);
+    font: 200 30px/1.5 Helvetica, Verdana, sans-serif;
+    text-align: right;
+    font-weight: bold;
+    min-width: 50px;
+    padding-right: 12px;
+    font-variant-numeric: tabular-nums;
+    align-self: flex-start;
+    background-image: linear-gradient(to bottom, aquamarine, orangered);
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+  /* Element separation */
+  li + li {
+    border-top: 1px solid rgba(255,255,255,0.2);
   }

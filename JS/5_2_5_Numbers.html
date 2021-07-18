@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+      'use strict'
+      function randInRange(min, max){
+        if(min >= max){
+          alert('min have to be < max');
+          return null;
+        }
+        return (Math.random() * (max-min))+min;
+      }
+
+      alert( randInRange(1, 5) );
+      alert( randInRange(1, 5) );
+      alert( randInRange(1, 5) );
+      alert( randInRange(6, 5) );
+
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+      'use strict'
+      function readNumber(){
+        let number;
+        while(true){
+          number = prompt('Enter a number', 0);
+          if (number == '' || number == null)
+          {
+            alert('Canceled');
+            return null;
+          }
+          else if (isFinite(number)){
+            alert('THX for the number');
+            return +number;
+          }
+        }
+      }
+
+      readNumber();
+
+  </script>
+
+</body>
+
+</html>

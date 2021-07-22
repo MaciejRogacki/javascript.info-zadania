@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+      'use strict'
+    function camelize(str){
+      let array = str.split('-');
+      for(let i = 1; i<array.length; i++ ){
+        let bufforStr = array[i];
+        let buforArr = bufforStr.split('');
+        buforArr[0] = buforArr[0].toUpperCase();
+        bufforStr = buforArr.join('');
+        array[i] = bufforStr;
+      }
+      str = array.join('');
+      return str;
+    }
+
+    alert(camelize("background-color"));
+    alert(camelize("list-style-image"));
+    alert(camelize("-webkit-transition"));
+
+    
+  </script>
+
+</body>
+
+</html>

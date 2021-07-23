@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+    'use strict'
+    function unique(arr){
+      return Array.from(new set(arr))
+    }
+
+    let values = ["Hare", "Krishna", "Hare", "Krishna",
+      "Krishna", "Krishna", "Hare", "Hare", ":-O"
+    ];
+
+    alert( unique(values) ); // Hare, Krishna, :-O
+
+  </script>
+
+</body>
+
+</html>

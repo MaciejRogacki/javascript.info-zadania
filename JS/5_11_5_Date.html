@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+    'use strict'
+    function getLastDayOfMonth(year, month){
+      let newDate = new Date(year, month+1, 0);
+      return newDate.getDate();
+    }
+
+    alert(getLastDayOfMonth(2012, 1));
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+    'use strict'
+    function formatDate(date){
+      let dateNow = new Date();
+      return (dateNow - date)< 1000 ? 'right now' :
+      (dateNow - date)< 1000*60 ? 
+        `${Math.floor((dateNow-date)/1000)} sec. ago` :
+        (dateNow - date)< 1000*60*60 ? 
+          `${Math.floor((dateNow-date)/60000)} min. ago` :
+          `${date.getDate()}.${date.getMonth()+1}.${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`;
+    }
+
+    alert( formatDate(new Date(new Date - 1)) ); // "right now"
+
+    alert( formatDate(new Date(new Date - 30 * 1000)) ); // "30 sec. ago"
+
+    alert( formatDate(new Date(new Date - 5 * 60 * 1000)) ); // "5 min. ago"
+
+    // yesterday's date like 31.12.16 20:00
+    alert( formatDate(new Date(new Date - 86400 * 1000)) );
+
+
+  </script>
+
+</body>
+
+</html>

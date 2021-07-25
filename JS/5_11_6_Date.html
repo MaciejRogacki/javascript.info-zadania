@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+    'use strict'
+    function getSecondsToday(){
+      let timeNow = new Date();
+      let timeStart =new Date();
+      timeStart.setHours(0, 0, 0, 0);
+      return (timeNow-timeStart)/1000;
+    }
+     
+    alert(`Todey have passed ${getSecondsToday()} secounds!`);
+    
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+    'use strict'
+    function getLocalDay(date){
+      
+      return (date.getDay() == 0) ? 7 : date.getDay();
+    }
+
+    let date = new Date(2012, 0, 3);
+    alert( getLocalDay(date) );
+    let date2 = new Date(2012, 0, 1);
+    alert( getLocalDay(date2) );
+
+  </script>
+
+</body>
+
+</html>

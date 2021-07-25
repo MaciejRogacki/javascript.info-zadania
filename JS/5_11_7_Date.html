@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <script>
+    'use strict'
+    function getSecondsToTomorrow(){
+      let timeTomorow = new Date();
+      timeTomorow.setDate(timeTomorow.getDate()+1)
+      let timeStart =new Date();
+      return (timeTomorow-timeStart)/1000;
+    }
+     
+    alert(`There is ${getSecondsToTomorrow()} secounds left till tumorow!`);
+    
+
+  </script>
+
+</body>
+
+</html>

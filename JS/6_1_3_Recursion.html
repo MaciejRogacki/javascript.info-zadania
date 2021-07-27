@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <script>
+      function fib(n){
+        let first = 1;
+        let secound = 1;
+        for (let i =3; i<=n; i++){
+          let third = first + secound;
+          first = secound;
+          secound = third;
+        }
+        return secound;
+      }
+      alert( fib(3) ); 
+      alert( fib(7) ); 
+      alert( fib(77) );
+      
+    </script>
+  </body>
+</html>

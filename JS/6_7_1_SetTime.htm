@@ -1,0 +1,30 @@
+﻿<html>
+
+<body>
+  <script>
+  function print(from, to){
+    let timeId = setInterval(function(){
+      if(from <= to){
+        console.log(from);
+        from++
+      }
+      else clearInterval(timeId);
+    }, 1000)
+  }
+    print(1,5);
+    
+  function print2(from, to){
+    setTimeout(function run() {
+        if(from <= to){
+        console.log(from);
+        from++
+      }
+        setTimeout(run, 1000);
+      }, 1000);
+  }
+    print2(1,5);
+
+  </script>
+</body>
+
+</html>

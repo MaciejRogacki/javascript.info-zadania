@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <script>
+      'use strict'
+      let head = {
+        glasses: 1,
+      };
+
+      let table = {
+        pen: 3,
+        __proto__: head,
+      };
+
+      let bed = {
+        sheet: 1,
+        pillow: 2,
+        __proto__: table,
+      };
+
+      let pockets = {
+        money: 2000,
+        __proto__: bed,
+      };
+      
+      let inmutTime =  Date.now();
+      let test = pockets.glasses;
+      let outputTime = Date.now();
+      alert(outputTime-inmutTime);
+      
+      inmutTime = Date.now();
+      test = head.glasses;
+      outputTime = Date.now();
+      alert(outputTime-inmutTime);
+      
+    </script>
+  </body>
+  </html>

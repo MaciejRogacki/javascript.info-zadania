@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+  let lu = document.createElement('lu');
+  lu.className = "lu";
+  document.body.append(lu);
+  while (true) {
+        let value = prompt("Please insert new li", 0);
+        if (value === "" || value === null || !isFinite(value)) break;
+        let li = document.createElement('li');
+        li.className = "li";
+        li.textContent = value;
+        lu.append(li);
+  }
+
+
+</script>
+
+</body>
+</html>

@@ -14,6 +14,10 @@
     <div class="list"> 
         <h2>Zadania: </h2>
         <ul>
+            
+            <li> 
+                - CZĘŚĆ
+        <ul id='part1'>
             <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/1_2_1_1_helloWorld.html">1_2_1_1_helloWorld</a></li>
             <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/1_2_1_2_helloWorld.html">1_2_1_2_helloWorld</a></li>
             <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/1_2_4_1_Variables.html">1_2_4_1_Variables</a></li>
@@ -115,6 +119,10 @@
             <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/1_11_8_1_Async.html">1_11_8_1_Async</a></li>
             <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/1_11_8_2_Async.html">1_11_8_2_Async</a></li>
             <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/1_11_9_1_Generator.html">1_11_9_1_Generator</a></li>
+            </ul>
+            </li>
+        <li>- CZĘŚĆ
+        <ul id='part2'>
             <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_1_3_1_WalkintTheDOM.html">2_1_3_1_WalkintTheDOM</a></li>
             <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_1_6_1_Atribites_Properitis.html">2_1_6_1_Atribites_Properitis</a></li>
             <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_1_7_1_Atribites_Properitis.html">2_1_7_1_Atribites_Properitis</a></li>
@@ -127,12 +135,39 @@
             <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_1_8_8_Modyfying_Document.html">2_1_8_8_Modyfying_Document</a></li>
             <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_1_8_10_Modyfying_Document.html">2_1_8_10_Modyfying_Document</a></li>
             <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_1_9_1_styles.html">2_1_9_1_Stylest</a></li>
-            
+            <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_1_10_1_Size_And_Scrolls.html">2_1_10_1_Size_And_Scrolls</a></li>
+            <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_1_10_2_Size_And_Scrolls.html">2_1_10_2_Size_And_Scrolls</a></li>
+            <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_1_10_3_Size_And_Scrolls.html">2_1_10_3_Size_And_Scrolls</a></li>
+            <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_2_1_1_Intro_Events.html">2_2_1_1_Intro_Events</a></li>
+            <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_2_1_2_Intro_Events.html">2_2_1_2_Intro_Events</a></li>
+            <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_2_1_4_Intro_Events.html">2_2_1_4_Intro_Events</a></li>
+            <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_2_1_5_Intro_Events.html">2_2_1_5_Intro_Events</a></li>
+            <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_2_1_6_Intro_Events.html">2_2_1_6_Intro_Events</a></li>
+            <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_2_1_7_Intro_Events.html">2_2_1_7_Intro_Events</a></li>
+            <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_2_3_1_Event_Delegation.html">2_2_3_1_Event_Delegation</a></li>
+            <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_2_3_2_Event_Delegation.html">2_2_3_2_Event_Delegation</a></li>
+            <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_2_3_3_Event_Delegation.html">2_2_3_3_Event_Delegation</a></li>
+            <li><a href="https://github.com/MaciejRogacki/javascript.info-zadania/blob/main/JS/2_2_3_4_Event_Delegation.html">2_2_3_4_Event_Delegation</a></li>
+        </ul>
+        </li>  
 
 
 
         </ul>
     </div>
+
+    <script>
+        part1.hidden = true;
+        part2.hidden = true;
+
+        document.addEventListener('click', function(event) {
+          let target = event.target;
+          if(target.tagName != 'LI') return;
+          for (child of target.children){
+            child.hidden = !child.hidden;
+          }
+        })
+      </script>
 </body>
 
 </html>

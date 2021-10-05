@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    .selected {
+      background: #0f0;
+    }
+
+    li {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  Click on a list item to select it.
+  <br>
+
+  <ul id="ul">
+    <li>Christopher Robin</li>
+    <li>Winnie-the-Pooh</li>
+    <li>Tigger</li>
+    <li>Kanga</li>
+    <li>Rabbit. Just rabbit.</li>
+  </ul>
+
+  <script>
+    ul.onclick = function(event){
+      let target = event.target.closest('LI');
+      if(event.ctrlKey) target.className += "selected";
+      else{
+        for(child of ul.children){
+          child.classList.remove("selected")
+        }
+        target.className += "selected,";
+      }
+    }
+  </script>
+
+</body>
+</html>

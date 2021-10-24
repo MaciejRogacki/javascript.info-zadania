@@ -80,6 +80,12 @@ body {
     box-sizing: border-box;
   }
   
+  .title {
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+
   
   /* Element counter */
   li::before {

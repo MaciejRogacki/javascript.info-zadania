@@ -37,6 +37,7 @@ body {
     padding: 0;
     counter-reset: index;  
     padding: 0;
+    cursor: pointer;
     
   }
    
